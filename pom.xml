@@ -13,6 +13,14 @@
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+    </dependency>
+  </dependencies>
+
   <build>
     <plugins>
       <plugin>
@@ -31,6 +39,7 @@
                   <mainClass>me.arin.empty.Empty</mainClass>
                 </transformer>
               </transformers>
+              <skipTests>true</skipTests>
             </configuration>
           </execution>
         </executions>
